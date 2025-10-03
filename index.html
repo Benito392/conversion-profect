@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System Converter (1-100)</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Number System Converter (1-100)</h1>
+        <form id="converter-form">
+            <label for="inputNumber">Enter Number (1-100):</label>
+            <input type="number" id="inputNumber" min="1" max="100" required>
+            <label for="fromSystem">From:</label>
+            <select id="fromSystem">
+                <option value="decimal" selected>Decimal</option>
+                <option value="binary">Binary</option>
+                <option value="octal">Octal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+            </select>
+            <label for="toSystem">To:</label>
+            <select id="toSystem">
+                <option value="decimal">Decimal</option>
+                <option value="binary">Binary</option>
+                <option value="octal">Octal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+            </select>
+            <button type="submit">Convert</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
